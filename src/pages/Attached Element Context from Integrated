@@ -1,0 +1,131 @@
+Attached Element Context from Integrated Browser
+
+Element: button#brand-logo-btn.flex.items-center.gap-3.text-left.group.cursor-pointer.focus:outline-none
+
+URL: http://localhost:3000/#/
+
+HTML Path: div#root > div.min-h-screen.bg-[#07090E].text-slate-100.flex.flex-col.selection:bg-cyan-500/30.selection:text-cyan-200 > header.sticky.top-0.z-40.w-full.transition-all.duration-300.bg-transparent.border-b.border-white/5 > div.max-w-7xl.mx-auto.px-4.sm:px-6.lg:px-8 > div.relative.flex.items-center.justify-between.h-20 > div.flex.items-center > button#brand-logo-btn.flex.items-center.gap-3.text-left.group.cursor-pointer.focus:outline-none
+
+Outer HTML:
+```html
+<button class="flex items-center gap-3 text-left group cursor-pointer focus:outline-none" id="brand-logo-btn"><div class="relative flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-violet-600 p-[1px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all"><div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg></div></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-extrabold text-xl tracking-tight text-white hover-gradient-text transition-colors">PROVISENT</span><span class="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-semibold tracking-wider">PRO</span></div><span class="text-[9px] uppercase font-semibold tracking-widest text-slate-400 hover-gradient-text -mt-0.5">EDUTECH PVT LTD</span></div></button>
+```
+
+Dimensions:
+- top: 18px
+- left: 156px
+- width: 205px
+- height: 44px
+
+CSS:
+```css
+*, ::after, ::before, ::backdrop, ::file-selector-button { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid; }
+button, input, select, optgroup, textarea, ::file-selector-button { font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1; }
+button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button { appearance: button; }
+.flex { display: flex; }
+.cursor-pointer { cursor: pointer; }
+.items-center { align-items: center; }
+.gap-3 { gap: calc(var(--spacing) * 3); }
+.text-left { text-align: left; }
+.focus\:outline-none:focus { --tw-outline-style: none;
+    outline-style: none; }
+
+/* Pseudo-elements */
+.selection\:bg-cyan-500\/20 ::selection { background-color: color-mix(in srgb, oklch(71.5% 0.143 215.221) 20%, transparent); }
+ { background-color: color-mix(in oklab, var(--color-cyan-500) 20%, transparent); }
+.selection\:bg-cyan-500\/30 ::selection { background-color: color-mix(in srgb, oklch(71.5% 0.143 215.221) 30%, transparent); }
+ { background-color: color-mix(in oklab, var(--color-cyan-500) 30%, transparent); }
+.selection\:text-cyan-200 ::selection { color: var(--color-cyan-200); }
+.selection\:text-cyan-300 ::selection { color: var(--color-cyan-300); }
+::-webkit-scrollbar { width: 8px;
+  height: 8px; }
+::-webkit-scrollbar-thumb { background: #1e293b;
+  border-radius: 4px; }
+::-webkit-scrollbar-track { background: #07090e; }
+
+/* Inherited */
+.text-slate-100 { color: var(--color-slate-100) }
+body { font-family: var(--font-body) }
+.font-sans { font-family: var(--font-sans) }
+html, :host { line-height: 1.5; tab-size: 4; font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"); font-feature-settings: var(--default-font-feature-settings, normal) }
+
+/* Resolved values */
+margin: 0px;
+padding: 0px;
+border-radius: 0px;
+border: 0px solid oklch(0.968 0.007 247.896);
+align-items: center;
+appearance: button;
+background-attachment: scroll;
+background-clip: border-box;
+background-color: rgba(0, 0, 0, 0);
+background-image: none;
+background-origin: padding-box;
+background-position-x: 0%;
+background-position-y: 0%;
+background-repeat: repeat;
+background-size: auto;
+box-sizing: border-box;
+color: oklch(0.968 0.007 247.896);
+cursor: pointer;
+display: flex;
+font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-feature-settings: normal;
+font-kerning: auto;
+font-language-override: normal;
+font-optical-sizing: auto;
+font-size: 16px;
+font-size-adjust: none;
+font-stretch: 100%;
+font-style: normal;
+font-variant-alternates: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-emoji: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-variant-position: normal;
+font-variation-settings: normal;
+font-weight: 400;
+height: 44px;
+letter-spacing: normal;
+line-height: 24px;
+opacity: 1;
+outline-style: none;
+padding-block-end: 0px /*UA*/;
+padding-block-start: 0px /*UA*/;
+padding-inline-end: 0px /*UA*/;
+padding-inline-start: 0px /*UA*/;
+tab-size: 4;
+text-align: left;
+text-indent: 0px /*UA*/;
+text-rendering: auto /*UA*/;
+text-shadow: none /*UA*/;
+text-transform: none /*UA*/;
+width: 204.82px;
+word-spacing: 0px /*UA*/;
+
+/* CSS variables */
+--color-cyan-300: oklch(86.5% 0.127 207.078);
+--font-body: 'Plus Jakarta Sans', sans-serif;
+--color-cyan-200: oklch(91.7% 0.08 205.041);
+--font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+--default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+--color-cyan-500: oklch(71.5% 0.143 215.221);
+--spacing: 0.25rem;
+--color-slate-100: oklch(96.8% 0.007 247.896);
+```

@@ -1,0 +1,14 @@
+Flask==3.0.3
+Flask-Cors==4.0.1
+Flask-SQLAlchemy==3.1.1
+Flask-JWT-Extended==4.6.0
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+gunicorn==22.0.0
+requests==2.32.3
+pydantic==2.8.2
+stripe==10.4.0
+razorpay==1.4.1
+email-validator==2.2.0
+qrcode==7.4.2
+Pillow==10.4.0

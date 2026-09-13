@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --website-gradient: linear-gradient(90deg, #22d3ee 0%, #38bdf8 30%, #818cf8 70%, #c084fc 100%);
+    --website-gradient-light: linear-gradient(90deg, #0891b2 0%, #2563eb 45%, #7c3aed 80%, #c026d3 100%);
+  }
+
+  body {
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* ==========================================================================
+   Website Signature Gradient on Text Hover
+   Theme: Cyan (#22d3ee) -> Sky (#38bdf8) -> Indigo (#818cf8) -> Violet (#c084fc)
+   ========================================================================== */
+
+/* Universal text elements when hovered */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover,
+h1:hover *, h2:hover *, h3:hover *, h4:hover *, h5:hover *, h6:hover *,
+p:hover,
+p:hover *,
+a:hover,
+a:hover *,
+li:hover,
+label:hover,
+blockquote:hover,
+caption:hover,
+th:hover,
+td:hover,
+dt:hover,
+dd:hover,
+strong:hover,
+b:hover,
+em:hover,
+small:hover,
+time:hover,
+code:hover,
+span:not([class*="bg-cyan-500"]):not([class*="bg-gradient"]):not([class*="rounded-full"]):hover,
+button:not([class*="bg-cyan-500"]):not([class*="bg-gradient"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):hover,
+button:not([class*="bg-cyan-500"]):not([class*="bg-gradient"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):hover span,
+button:not([class*="bg-cyan-500"]):not([class*="bg-gradient"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):hover p,
+nav button:not(#nav-enroll-button):not(#mobile-enroll-button):hover,
+nav button:not(#nav-enroll-button):not(#mobile-enroll-button):hover *,
+footer button:hover,
+footer button:hover *,
+.hover-gradient-text:hover,
+.hover-text-gradient:hover {
+  background-image: linear-gradient(90deg, #22d3ee 0%, #38bdf8 30%, #818cf8 70%, #c084fc 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Light Mode Contrast Calibrated Gradient */
+.light h1:hover, .light h2:hover, .light h3:hover, .light h4:hover, .light h5:hover, .light h6:hover,
+.light h1:hover *, .light h2:hover *, .light h3:hover *, .light h4:hover *, .light h5:hover *, .light h6:hover *,
+.light p:hover,
+.light p:hover *,
+.light a:hover,
+.light a:hover *,
+.light li:hover,
+.light label:hover,
+.light blockquote:hover,
+.light caption:hover,
+.light th:hover,
+.light td:hover,
+.light dt:hover,
+.light dd:hover,
+.light strong:hover,
+.light b:hover,
+.light em:hover,
+.light small:hover,
+.light time:hover,
+.light code:hover,
+.light span:not([class*="bg-cyan-500"]):not([class*="bg-gradient"]):not([class*="rounded-full"]):hover,
+.light button:not([class*="bg-cyan-500"]):not([class*="bg-gradient"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):hover,
+.light button:not([class*="bg-cyan-500"]):not([class*="bg-gradient"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):hover span,
+.light button:not([class*="bg-cyan-500"]):not([class*="bg-gradient"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):hover p,
+.light nav button:not(#nav-enroll-button):not(#mobile-enroll-button):hover,
+.light nav button:not(#nav-enroll-button):not(#mobile-enroll-button):hover *,
+.light footer button:hover,
+.light footer button:hover *,
+.light .hover-gradient-text:hover,
+.light .hover-text-gradient:hover {
+  background-image: linear-gradient(90deg, #0891b2 0%, #2563eb 45%, #7c3aed 80%, #c026d3 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Ensure SVG icons maintain crisp visibility and cyan stroke accent */
+svg,
+svg *,
+*:hover > svg,
+*:hover > svg *,
+a:hover svg,
+a:hover svg *,
+button:hover svg,
+button:hover svg *,
+p:hover svg,
+p:hover svg *,
+li:hover svg,
+li:hover svg *,
+span:hover svg,
+span:hover svg * {
+  -webkit-text-fill-color: initial !important;
+}
+
+a:hover > svg,
+button:hover > svg,
+p:hover > svg,
+li:hover > svg {
+  stroke: #38bdf8 !important;
+  transition: stroke 0.2s ease;
+}
+
+/* Glassmorphism and Futuristic UI Utilities */
+.liquid-glass {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.liquid-glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%), rgba(10, 15, 29, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass-card:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 12px 36px -10px rgba(14, 165, 233, 0.15), 0 0 0 1px rgba(56, 189, 248, 0.2);
+  transform: translateY(-3px);
+}
+
+.light .liquid-glass {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light .liquid-glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.8) 100%);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.light .liquid-glass-card:hover {
+  border-color: rgba(14, 165, 233, 0.4);
+  box-shadow: 0 12px 30px -8px rgba(14, 165, 233, 0.12);
+}
+
+/* Subtle glow badges & elements */
+.glow-badge-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+}
+
+.glow-badge-violet {
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.25);
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Keyframes for subtle ambient animations */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s infinite ease-in-out;
+}
+
+@keyframes float-subtle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float-subtle 6s infinite ease-in-out;
+}
+
+/* Skeleton Loading Shimmer Effects */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.08) 35%,
+    rgba(34, 211, 238, 0.12) 50%,
+    rgba(255, 255, 255, 0.08) 65%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.light .skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.04) 0%,
+    rgba(0, 0, 0, 0.08) 35%,
+    rgba(6, 182, 212, 0.15) 50%,
+    rgba(0, 0, 0, 0.08) 65%,
+    rgba(0, 0, 0, 0.04) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
